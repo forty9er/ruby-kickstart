@@ -15,3 +15,12 @@
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
 
+def prime_chars? arr
+  require 'Prime'
+  sum = arr.join.length
+  if Prime.prime?(sum)
+    return true
+  else
+    return false
+  end
+end

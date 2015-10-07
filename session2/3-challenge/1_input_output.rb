@@ -6,8 +6,12 @@
 #
 # Standard input will be like "9 2\n" and will expect you to print
 # "11\n7\n18\n" to standard output.
+  
 
 def sum_difference_product
-  # your code goes here
-  
+  nums_arr = gets.split(' ')
+  result="#{(nums_arr[0].to_i + nums_arr[1].to_i)}\\n"
+  result<<"#{(nums_arr[0].to_i - nums_arr[1].to_i)}\\n"
+  result<<"#{(nums_arr[0].to_i * nums_arr[1].to_i)}\\n"
+  puts result
 end
